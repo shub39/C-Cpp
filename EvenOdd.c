@@ -1,3 +1,4 @@
+//Check if no is Even or Odd
 #include<stdio.h>
 int main(){
     int x;

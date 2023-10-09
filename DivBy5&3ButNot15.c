@@ -1,3 +1,4 @@
+//check if no is divisible by 5 and 3 but not divisible by 15 (Chutiya question)
 #include<stdio.h>
 int main(){
     int f;

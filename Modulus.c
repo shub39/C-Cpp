@@ -1,3 +1,4 @@
+//find Modulus of a number
 #include<stdio.h>
 int main(){
     float x;

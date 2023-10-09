@@ -1,3 +1,4 @@
+//Check if Number is Divisible by 5or not
 #include<stdio.h>
 int main(){
     int x;

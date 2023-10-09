@@ -1,3 +1,4 @@
+//find profit or loss
 #include<stdio.h>
 int main(){
     float cp;

@@ -1,3 +1,4 @@
+//Check if the number is integer or not
 #include<stdio.h>
 int main(){
     float f;
