@@ -1,15 +1,15 @@
-//Print the sum of digits of input n
+//Print the reverse of digits of input n
 #include<stdio.h>
 int main(){
-    int n,sum=0,x;
+    int n,rev=0,x;
     printf("Enter The number:  ");
     scanf("%d",&n);
     while(n>0){
         x=n%10;
         n/=10;
-        sum+=x;
+        rev=rev*10+x;
     }
-    printf("The sum of digits is %d",sum);
+    printf("The reverse of digits is %d",rev);
     return 0;
 }
 

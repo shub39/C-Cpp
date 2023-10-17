@@ -1,4 +1,4 @@
-//Print the sum of digits of input n
+//Print the sum even of digits of input n
 #include<stdio.h>
 int main(){
     int n,sum=0,x;
@@ -7,9 +7,10 @@ int main(){
     while(n>0){
         x=n%10;
         n/=10;
+        if (x % 2 != 0) continue;
         sum+=x;
     }
-    printf("The sum of digits is %d",sum);
+    printf("The sum of all even digits is %d",sum);
     return 0;
 }
 
