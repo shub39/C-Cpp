@@ -1,4 +1,4 @@
-// Laerning about charArrays or strings
+// Learning about charArrays or strings
 
 #include <iostream>
 #include <utility>
