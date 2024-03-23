@@ -1,6 +1,7 @@
 // Sieve of erastothens for counting primes
 
 #include<iostream>
+#include<bits/stdc++.h>
 #include<vector>
 using namespace std;
 
@@ -11,6 +12,7 @@ int countPrimes(int n) {
     if(prime[i]) {
       count++;
       for(int j = 2 * i; j < n; j = j + i) prime[j] = 0;
+      cout << i << endl;
     }
   }
   return count;
