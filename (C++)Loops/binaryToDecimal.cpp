@@ -14,10 +14,7 @@ int main () {
 
     while (n != 0) {
         int digit = n % 10;
-        if (digit == 1) {
-            ans = ans + pow(2,i);
-
-        }
+        ans = (digit == 1) ? ans + pow(2,i) :ans = ans; // Inline funtions
         n = n / 10;
         i++;
     
