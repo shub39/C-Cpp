@@ -1,0 +1,13 @@
+LINUX COMMANDS
+
+mkdir : Create Folder/ Directory
+
+cd : Change Folder/ Directory
+
+nano <filename>.c : open <filename>.c in nano text editor
+
+cd .. : Exit the Folder/ Directory
+
+gcc <filename>.c -o <output_filename> : Compile the C code in <filename>.c into a binary executeable <output_filename>
+
+./<output_filename> : Run the executable file
