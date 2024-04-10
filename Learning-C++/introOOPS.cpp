@@ -2,11 +2,14 @@
 
 using namespace std; 
 
-class Hero {
+class Hero { 
 private:
   int health;
   char level;
 public:
+  Hero() {
+    cout << "Constructor Called." << endl;
+  }
   void setHealth(int n) {
     health = n;
   }
