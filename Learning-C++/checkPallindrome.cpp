@@ -1,16 +1,18 @@
 // Check if given string is a pallindrome
 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
-bool checkPallindrome(string& a,int end,int start = 0) {
-  if (start > end) return true;
-  if (a[start++] != a[end--]) return false;
-  return checkPallindrome(a, end, start); 
+bool checkPallindrome(string &a, int end, int start = 0) {
+  if (start > end)
+    return true;
+  if (a[start++] != a[end--])
+    return false;
+  return checkPallindrome(a, end, start);
 }
 
-int main(){
+int main() {
   string a = "";
   cout << "Enter the string: ";
   cin >> a;
