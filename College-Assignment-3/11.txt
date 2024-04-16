@@ -1,0 +1,16 @@
+break statement:
+
+    The break statement is used to exit from a loop (like for, while, do-while) or a switch statement.
+    When encountered inside a loop, it immediately terminates the loop and transfers control to the statement immediately following the loop.
+    It is commonly used to exit a loop early based on some condition.
+
+continue statement:
+
+    The continue statement is used to skip the rest of the code inside a loop for the current iteration and proceed to the next iteration.
+    It is commonly used to skip certain iterations based on some condition.
+
+exit function:
+
+    The exit function is used to terminate the entire program and return control to the operating system.
+    It immediately terminates the program without executing any further statements in the program, including any pending return statements from functions.
+    It's important to note that exit is a function, not a statement, and it requires the stdlib.h header to be included.
