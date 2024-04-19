@@ -1,3 +1,4 @@
+#include <array>
 #include <iostream>
 using namespace std;
 
@@ -17,6 +18,16 @@ public:
     }
   }
 };
+
+int getLength(Node *tail) {
+  int len = 0;
+  Node *temp = tail;
+  do {
+    len++;
+    temp = temp->next;
+  } while (temp->data != tail->data);
+  return len;
+}
 
 void insertNode(Node *&tail, int element, int data) {
   if (tail == NULL) {
@@ -69,11 +80,39 @@ void deleteNode(Node *&tail, int element) {
   delete current;
 }
 
+Node *divide(Node *tail) {
+  int len = getLength(tail);
+  Node *temp = tail;
+  Node *part = NULL;
+  Node *iter = tail;
+  if (len % 2 == 0) {
+    for (int x = 0; x < len / 2 - 1; x++) {
+      temp = temp->next;
+    }
+    part = temp->next;
+    iter = part;
+    temp->next = tail;
+    while (part->next->data != tail->data) {
+      part = part->next;
+    }
+    part->next = iter;
+  } else {
+    for (int x = 0; x < len / 2; x++) {
+      temp = temp->next;
+    }
+    part = temp->next;
+    iter = part;
+    temp->next = tail;
+    while (part->next->data != tail->data) {
+      part = part->next;
+    }
+    part->next = iter;
+  }
+  return iter;
+}
+
 int main() {
   Node *tail = NULL;
-
-  insertNode(tail, 0, 30);
-  print(tail);
 
   insertNode(tail, 30, 8);
   print(tail);
@@ -84,7 +123,14 @@ int main() {
   insertNode(tail, 2, 20);
   print(tail);
 
-  deleteNode(tail, 2);
+  insertNode(tail, 2, 47);
   print(tail);
+
+  insertNode(tail, 2, 98);
+  print(tail);
+
+  Node *next = divide(tail);
+  print(tail);
+  print(next);
   return 0;
 }
