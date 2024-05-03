@@ -1,4 +1,3 @@
-// How to create dynamic memeory
 
 #include<iostream>
 using namespace std;
