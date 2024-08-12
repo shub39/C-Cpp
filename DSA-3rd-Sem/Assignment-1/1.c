@@ -16,4 +16,32 @@ not, return the highest treasure he can find.
 
 int main() {
   int arr[3];
+  int max = 0;
+
+  // Taking The treasures
+  printf("Enter The three treasures (Integers)\n");
+  for (int i = 0; i < 3; i++) {
+    scanf("%d", &arr[i]);
+  }
+
+  // Finding Greatest treasure
+  for (int i = 0; i < 3; i++) {
+    if (arr[i] > max) max = arr[i];
+  }
+
+  // Check if third greatest treasure is possible or not
+  if (arr[0] == arr[1] || arr[1] == arr[2] || arr[0] == arr[2]) {
+    printf("%d is the greatest treasure.\n", max);
+    return 0;
+  }
+
+  // Find the third greatest treasure
+  for (int i = 0; i < 3; i++) {
+    if (arr[i] < max) max = arr[i];
+  }
+
+  printf("%d is the Third Greatest Treasure\n", max);
+  return 0;
 }
+
+// TBH this question is stupid, it doesnt make any sense wtf lmao stop this pls
