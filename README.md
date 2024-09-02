@@ -7,7 +7,7 @@
 
 </div>
 
-This is a repo for my practice and future reference.
+This is a repo for my practice and reference.
 
 <details>
 <summary><h3>What am I doing?</h3></summary>
